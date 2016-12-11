@@ -1,0 +1,29 @@
+.box {
+  position: relative;
+  box-shadow: 357px 364px 0 7px #1B1464, -357px -364px 0 7px #1B1464, 0 0 0 7px #1B1464;
+  transition: 0.2s 0.18s;
+}
+.box:before, .box:after {
+  content: '';
+  position: absolute;
+  height: 7px;
+  width: 0%;
+  background: #1B1464;
+  transition: 0.2s;
+}
+.box:before {
+  top: -7px;
+  right: -7px;
+}
+.box:after {
+  bottom: -7px;
+  left: -7px;
+}
+.box:hover {
+  box-shadow: 357px 7px 0 7px #1B1464, -357px -7px 0 7px #1B1464, 0 0 0 7px #1B1464;
+  transition: 0.2s;
+}
+.box:hover:after, .box:hover:before {
+  width: 357px;
+  transition: 0.2s 0.18s;
+}
