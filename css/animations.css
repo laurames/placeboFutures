@@ -1,8 +1,3 @@
-.box{
-  border: 3px solid #FCEE21;
-  -webkit-animation: draw 6s linear 1;
-  animation: draw 6s linear 1;
-}
 /* Animation for box borders */
 @-webkit-keyframes draw {
   0%{

@@ -35,13 +35,13 @@ h1.deepshadow {
 }
 p {
   margin: 0 0 25px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.6;
   }
 }
@@ -144,8 +144,11 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .box{
+  border: 3px solid #FCEE21;
   padding: 20px;
   padding-bottom: 25px;
+  -webkit-animation: draw 6s linear 1;
+  animation: draw 6s linear 1;
 }
 .intro .intro-body .brand-heading {
   font-size: 2em;
@@ -244,13 +247,48 @@ a:focus {
     transform: scale(1);
   }
 }
-.content-section {
-  padding-top: 100px;
+.content-section{
+  padding: 90px 0;
   text-align: left;
+}
+.about-section{
+  padding: 0;
+}
+.about-section div{
+  padding: 6em 5em;
+}
+.about-section .box{
+  border: 3px solid #FCEE21;
+  padding: 20px;
+  display:inline-block;
+}
+.about-text{
+  background-color: #0a0a3a;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.contact-text p{
+  font-size: 13px;
+  padding-left: 20px;
+}
+.contact-text{
+  padding: 6em 2em !important;
+}
+.contact-text .grey-text{
+  color: #737373;
+  padding: 5px;
+}
+.contact-text .box{
+  border: none;
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 100px;
+    padding: 90px 0;
+  }
+  .about-section {
+    padding: 0;
   }
 }
 .form-control{
