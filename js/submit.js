@@ -52,6 +52,7 @@ window.onload = function() {
 
 	btnYes.addEventListener( 'click', function( event ) {
 		btn.classList.remove( 'is-open' );
+		window.location = "index.html#story";
 	} );
 
 	btnNo.addEventListener( 'click', function( event ) {
