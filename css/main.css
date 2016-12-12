@@ -356,91 +356,130 @@ body{
   }
 }
 
-/* ==========================================================================
-EXAMPLE Media Queries for Responsive Design.
-These examples override the primary ('mobile first') styles.
-Modify as content requires.
-========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.new-submit-btn.is-open ~ .description {
+  opacity: 0;
 }
 
-@media print,
-(-o-min-device-pixel-ratio: 5/4),
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.new-submit-btn {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  font-size: 1.2em;
+  -webkit-transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  text-align: center;
 }
 
-/* ==========================================================================
-Print styles.
-Inlined to avoid required HTTP connection: h5bp.com/r
-========================================================================== */
+.new-submit-btn .btn-front {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  background-color: #FCEE21;
+  color: #0a0a3a;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: background 0.15s ease, line-height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: background 0.15s ease, line-height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.new-submit-btn .btn-front:hover {
+  background-color: #0a0a3a;
+  color: #FCEE21;
+}
+.pacifico{
+  font-family: pacifico !important;
+}
+.new-submit-btn .btn-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0a0a3a;
+  color: #FCEE21;
+  -webkit-transform: translateZ(-2px) rotateX(180deg);
+  transform: translateZ(-2px) rotateX(180deg);
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.8s ease;
+  transition: box-shadow 0.8s ease;
+}
+.new-submit-btn .btn-back p {
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+.new-submit-btn .btn-back button {
+  padding: 12px 20px;
+  width: 30%;
+  margin: 0 5px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: background 0.15s ease;
+  transition: background 0.15s ease;
+}
+.new-submit-btn .btn-back button:focus {
+  outline: 0;
+}
+.new-submit-btn .btn-back button.yes {
+  background-color: #FCEE21;
+  color: #0a0a3a;
+}
+.new-submit-btn .btn-back button.yes:hover {
+  background-color: #51adf6;
+}
+.new-submit-btn .btn-back button.no {
+  color: #2196F3;
+}
+.new-submit-btn .btn-back button.no:hover {
+  background-color: #ddd;
+}
 
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important; /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+.new-submit-btn[data-direction="left"] .btn-back,
+.new-submit-btn[data-direction="right"] .btn-back {
+  -webkit-transform: translateZ(-2px) rotateY(180deg);
+  transform: translateZ(-2px) rotateY(180deg);
+}
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+.new-submit-btn.is-open {
+  width: 400px;
+  height: 160px;
+}
+.new-submit-btn.is-open .btn-front {
+  pointer-events: none;
+  line-height: 160px;
+}
+.new-submit-btn.is-open .btn-back {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
 
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
+.new-submit-btn[data-direction="top"].is-open {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
 
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+.new-submit-btn[data-direction="right"].is-open {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
 
-  /*
-  * Don't show links for images, or javascript/internal links
-  */
+.new-submit-btn[data-direction="bottom"].is-open {
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}
 
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group; /* h5bp.com/t */
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+.new-submit-btn[data-direction="left"].is-open {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
