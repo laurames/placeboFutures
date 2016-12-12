@@ -1,110 +1,124 @@
 .box{
-  border: 3px solid #1B1464;
-  -webkit-animation: draw 6s linear infinite;
-  animation: draw 6s linear infinite;
+  border: 3px solid #FCEE21;
+  -webkit-animation: draw 6s linear 1;
+  animation: draw 6s linear 1;
 }
 /* include this only once */
 @-webkit-keyframes draw {
   0%{
-  }
-  12,5% {
     border-top-color: #FCEE21;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+    border-right-color: #FCEE21;
+    border-bottom-color: #FCEE21;
+    border-left-color: #FCEE21;
+  }
+  12% {
+    border-top-color: transparent;
+    border-right-color: #FCEE21;
+    border-bottom-color: #FCEE21;
+    border-left-color: #FCEE21;
   }
   25% {
-    border-top-color: #FCEE21;
-    border-right-color: #FCEE21;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  37,5% {
-    border-top-color: #FCEE21;
-    border-right-color: #FCEE21;
+    border-top-color: transparent;
+    border-right-color: transparent;
     border-bottom-color: #FCEE21;
-    border-left-color: transparent;
+    border-left-color: #FCEE21;
+  }
+  37% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #FCEE21;
   }
   50% {
-    border-top-color: #FCEE21;
-    border-right-color: #FCEE21;
-    border-bottom-color: #FCEE21;
-    border-left-color: #FCEE21;
-  }
-  62,5% {
-    border-top-color: transparent;
-    border-right-color: #FCEE21;
-    border-bottom-color: #FCEE21;
-    border-left-color: #FCEE21;
-  }
-  75% {
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #FCEE21;
-    border-left-color: #FCEE21;
-  }
-  87,5% {
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #FCEE21;
-  }
-  100%{
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent;
+  }
+  62% {
+    border-top-color: #FCEE21;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  75% {
+    border-top-color: #FCEE21;
+    border-right-color: #FCEE21;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  87% {
+    border-top-color: #FCEE21;
+    border-right-color: #FCEE21;
+    border-bottom-color: #FCEE21;
+    border-left-color: transparent;
+  }
+  100%{
+    border-top-color: #FCEE21;
+    border-right-color: #FCEE21;
+    border-bottom-color: #FCEE21;
+    border-left-color: #FCEE21;
   }
 }
 @keyframes draw {
   0%{
-  }
-  12,5% {
     border-top-color: #FCEE21;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+    border-right-color: #FCEE21;
+    border-bottom-color: #FCEE21;
+    border-left-color: #FCEE21;
+  }
+  12% {
+    border-top-color: transparent;
+    border-right-color: #FCEE21;
+    border-bottom-color: #FCEE21;
+    border-left-color: #FCEE21;
   }
   25% {
-    border-top-color: #FCEE21;
-    border-right-color: #FCEE21;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  37,5% {
-    border-top-color: #FCEE21;
-    border-right-color: #FCEE21;
+    border-top-color: transparent;
+    border-right-color: transparent;
     border-bottom-color: #FCEE21;
-    border-left-color: transparent;
+    border-left-color: #FCEE21;
+  }
+  37% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #FCEE21;
   }
   50% {
-    border-top-color: #FCEE21;
-    border-right-color: #FCEE21;
-    border-bottom-color: #FCEE21;
-    border-left-color: #FCEE21;
-  }
-  62,5% {
-    border-top-color: transparent;
-    border-right-color: #FCEE21;
-    border-bottom-color: #FCEE21;
-    border-left-color: #FCEE21;
-  }
-  75% {
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #FCEE21;
-    border-left-color: #FCEE21;
-  }
-  87,5% {
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #FCEE21;
-  }
-  100%{
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
+  62% {
+    border-top-color: #FCEE21;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  75% {
+    border-top-color: #FCEE21;
+    border-right-color: #FCEE21;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  87% {
+    border-top-color: #FCEE21;
+    border-right-color: #FCEE21;
+    border-bottom-color: #FCEE21;
+    border-left-color: transparent;
+  }
+  100%{
+    border-top-color: #FCEE21;
+    border-right-color: #FCEE21;
+    border-bottom-color: #FCEE21;
+    border-left-color: #FCEE21;
+  }
+}
+.grow:hover
+{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
