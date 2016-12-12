@@ -259,8 +259,12 @@ a:focus {
 .content-section{
   padding: 90px 0;
   text-align: left;
+  min-height: 100%;
+  padding: 0;
 }
 .about-section{
+  padding: 0;
+  height: 100%;
   padding: 0;
 }
 .about-section div{
@@ -277,6 +281,7 @@ a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  min-height: 100%;
 }
 .contact-text p{
   font-size: 13px;
