@@ -3,7 +3,7 @@
   -webkit-animation: draw 6s linear 1;
   animation: draw 6s linear 1;
 }
-/* include this only once */
+/* Animation for box borders */
 @-webkit-keyframes draw {
   0%{
     border-top-color: #FCEE21;
