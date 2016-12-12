@@ -1,6 +1,6 @@
 @font-face {
   font-family: pacifico;
-  src: url(fonts/pacifico.ttf);
+  src: url(../fonts/pacifico.ttf);
 }
 .pacifico{
   font-family: pacifico !important;
@@ -46,7 +46,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: #737373;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -54,7 +54,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #FCEE21;
 }
 .light {
   font-weight: 400;
